@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\iconAdd.png" />
+    <None Remove="Icons\iconEdit.png" />
+    <None Remove="Icons\iconExit.png" />
+    <None Remove="Icons\iconFavorite.png" />
+    <None Remove="Icons\iconFile.png" />
+    <None Remove="Icons\iconFilm.png" />
+    <None Remove="Icons\iconOptions.png" />
+    <None Remove="Icons\iconRemove.png" />
+    <None Remove="Icons\iconStar.png" />
+    <None Remove="Icons\iconTools.png" />
+    <None Remove="Icons\iconUploadImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="ResourceDictionary.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="ModernUI.WPF" Version="1.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\iconFavorite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\iconAdd.png" />
+    <Resource Include="Icons\iconEdit.png" />
+    <Resource Include="Icons\iconExit.png" />
+    <Resource Include="Icons\iconFile.png" />
+    <Resource Include="Icons\iconFilm.png" />
+    <Resource Include="Icons\iconOptions.png" />
+    <Resource Include="Icons\iconRemove.png" />
+    <Resource Include="Icons\iconStar.png" />
+    <Resource Include="Icons\iconTools.png" />
+    <Resource Include="Icons\iconUploadImage.png" />
+    <Resource Include="ResourceDictionary.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

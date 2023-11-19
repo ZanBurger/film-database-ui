@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="FilmDatabase.RatingUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FilmDatabase"
+             mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Rating: " VerticalAlignment="Center" Margin="0 0 20 0" />
+        <Button x:Name="toggleStar1" Width="35" Height="35" Click="toggleStar1_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="toggleStar1Text" Text="1" FontSize="17"/>
+                <Image Source="icons/iconStar.png" Width="15" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="toggleStar2" Width="35" Height="35" Click="toggleStar2_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="toggleStar2Text" Text="2" FontSize="17"/>
+                <Image Source="icons/iconStar.png" Width="15" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="toggleStar3"  Width="35" Height="35" Click="toggleStar3_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="toggleStar3Text" Text="3" FontSize="17"/>
+                <Image Source="icons/iconStar.png" Width="15" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="toggleStar4"  Width="35" Height="35" Click="toggleStar4_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="toggleStar4Text" Text="4" FontSize="17"/>
+                <Image Source="icons/iconStar.png" Width="15" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="toggleStar5" Width="35" Height="35" Click="toggleStar5_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="toggleStar5Text" Text="5" FontSize="17"/>
+                <Image Source="icons/iconStar.png" Width="15" Height="15"/>
+            </StackPanel>
+        </Button>
+        <TextBlock x:Name="actualRating" Text="0" VerticalAlignment="Center" Margin="20 0 20 0"/>
+    </StackPanel>
+</UserControl>
